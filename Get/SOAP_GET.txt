@@ -1,0 +1,28 @@
+WEB SERVİS KULLANARAK TC KİMLİK NO DOĞRULAMA  C# FormApp  SOAP WebService - BİL. MÜH. CİHAN TURUNÇ
+TC Kimlik No Doğrulama Sistemi
+VS C# WinForm Uygulaması
+.NET Coreun gelişmiş versiyonu
+Biz .NET Frameworkte yapacağız.
+Toolbox var.Malzeme listesi bunlar kullanılır.
+TC-Ad-Soyad ve Doğum Yılı Alınır. Label olarak alınır. Textbox ta veri gişi için metin kutusu.
+Properties textten ismi değiştirilir.
+TCde saçma sapan veriler olabilir.
+WebServis yanlış verilerle kayıt olabilir.
+veritabnında TC kontrol edilebilir.
+SOAP : WebServis oalrak basit internet erişim protokolü
+https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx?op=TCKimlikNoDogrula
+SONUNA EKLERKEN ?WSDL eklenir.
+şU tc aD-sOYAD  DOĞUM YILINDA BİRİ VAR MI DOĞRU YANLIŞ DÖNRÜRÜ SİSTEM SADECE DOĞRU VEYA YANLIŞI DÖNDÜRÜR.
+isimlendirme düzgün olmalı
+Çift tıklayınca içine yazılır.
+Intellisense VS yapay zekası
+bool doğru veya yanlış
+Hata olunca try-catch tekrar veri gişiri yapabilirsin.
+Add Service Reference ile eklenir.
+https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx?WSDL
+SOAP Client yapılır.
+TC-Ad-Soyad-Doğum Yılı yazılır.
+Biri yanlış yazılsa hata gelir.
+Bütün bilşgilerden biri bile yanlış olsa hatalı döner
+Hepsi de kimlikteki gibi olmalı.
+TC Kimlik Doğrulamada bu tür kodlar var projede kullanılmazsa sahte kayıt olur.

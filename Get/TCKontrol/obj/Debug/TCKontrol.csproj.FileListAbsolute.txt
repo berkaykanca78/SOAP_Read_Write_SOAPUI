@@ -1,0 +1,11 @@
+C:\Projeler\Services\SOAP\Get\TCKontrol\obj\Debug\TCKontrol.csproj.AssemblyReference.cache
+C:\Projeler\Services\SOAP\Get\TCKontrol\obj\Debug\TCKontrol.csproj.SuggestedBindingRedirects.cache
+C:\Projeler\Services\SOAP\Get\TCKontrol\obj\Debug\TCKontrol.Form1.resources
+C:\Projeler\Services\SOAP\Get\TCKontrol\obj\Debug\TCKontrol.Properties.Resources.resources
+C:\Projeler\Services\SOAP\Get\TCKontrol\obj\Debug\TCKontrol.csproj.GenerateResource.cache
+C:\Projeler\Services\SOAP\Get\TCKontrol\obj\Debug\TCKontrol.csproj.CoreCompileInputs.cache
+C:\Projeler\Services\SOAP\Get\TCKontrol\bin\Debug\TCKontrol.exe.config
+C:\Projeler\Services\SOAP\Get\TCKontrol\bin\Debug\TCKontrol.exe
+C:\Projeler\Services\SOAP\Get\TCKontrol\bin\Debug\TCKontrol.pdb
+C:\Projeler\Services\SOAP\Get\TCKontrol\obj\Debug\TCKontrol.exe
+C:\Projeler\Services\SOAP\Get\TCKontrol\obj\Debug\TCKontrol.pdb

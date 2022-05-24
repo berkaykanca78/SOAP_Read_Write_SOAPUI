@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5229bda2-7f9b-463b-9709-aeb8c6f876e8" activeEnvironment="Default" name="KPSPublic" resourceRoot="" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="3583338c-b536-4652-808b-6e697e6e10d1" wsaVersion="NONE" name="KPSPublicSoap" type="wsdl" bindingName="{http://tckimlik.nvi.gov.tr/WS}KPSPublicSoap" soapVersion="1_1" anonymous="optional" definition="file:/C:/Projeler/Services/SOAP/KPSPublic.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Projeler/Services/SOAP/KPSPublic.wsdl"><con:part><con:url>file:/C:/Projeler/Services/SOAP/KPSPublic.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tckimlik.nvi.gov.tr/WS" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tckimlik.nvi.gov.tr/WS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tckimlik.nvi.gov.tr/WS">
+      <s:element name="TCKimlikNoDogrula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCKimlikNo" type="s:long"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Ad" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Soyad" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="DogumYili" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCKimlikNoDogrulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCKimlikNoDogrulaResult" type="s:boolean"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TCKimlikNoDogrulaSoapIn">
+    <wsdl:part name="parameters" element="tns:TCKimlikNoDogrula"/>
+  </wsdl:message>
+  <wsdl:message name="TCKimlikNoDogrulaSoapOut">
+    <wsdl:part name="parameters" element="tns:TCKimlikNoDogrulaResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="KPSPublicSoap">
+    <wsdl:operation name="TCKimlikNoDogrula">
+      <wsdl:input message="tns:TCKimlikNoDogrulaSoapIn"/>
+      <wsdl:output message="tns:TCKimlikNoDogrulaSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="KPSPublicSoap" type="tns:KPSPublicSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="TCKimlikNoDogrula">
+      <soap:operation soapAction="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="KPSPublicSoap12" type="tns:KPSPublicSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="TCKimlikNoDogrula">
+      <soap12:operation soapAction="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="KPSPublic">
+    <wsdl:port name="KPSPublicSoap" binding="tns:KPSPublicSoap">
+      <soap:address location="https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="KPSPublicSoap12" binding="tns:KPSPublicSoap12">
+      <soap12:address location="https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx</con:endpoint></con:endpoints><con:operation id="67b7b76e-e306-40b3-9797-ea04fb3088ba" isOneWay="false" action="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula" name="TCKimlikNoDogrula" bindingOperationName="TCKimlikNoDogrula" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a77f84e9-66e0-46e5-a164-8e36da8e7c43" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://tckimlik.nvi.gov.tr/WS">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:TCKimlikNoDogrula>\r
+         <ws:TCKimlikNo>?</ws:TCKimlikNo>\r
+         <!--Optional:-->\r
+         <ws:Ad>?</ws:Ad>\r
+         <!--Optional:-->\r
+         <ws:Soyad>?</ws:Soyad>\r
+         <ws:DogumYili>?</ws:DogumYili>\r
+      </ws:TCKimlikNoDogrula>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="0425770a-7466-41de-8cfe-c9fb9fb38fb1" wsaVersion="NONE" name="KPSPublicSoap12" type="wsdl" bindingName="{http://tckimlik.nvi.gov.tr/WS}KPSPublicSoap12" soapVersion="1_2" anonymous="optional" definition="file:/C:/Projeler/Services/SOAP/KPSPublic.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Projeler\Services\SOAP\KPSPublic.wsdl"><con:part><con:url>file:\C:\Projeler\Services\SOAP\KPSPublic.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tckimlik.nvi.gov.tr/WS" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tckimlik.nvi.gov.tr/WS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tckimlik.nvi.gov.tr/WS">
+      <s:element name="TCKimlikNoDogrula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCKimlikNo" type="s:long"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Ad" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Soyad" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="DogumYili" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCKimlikNoDogrulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCKimlikNoDogrulaResult" type="s:boolean"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TCKimlikNoDogrulaSoapIn">
+    <wsdl:part name="parameters" element="tns:TCKimlikNoDogrula"/>
+  </wsdl:message>
+  <wsdl:message name="TCKimlikNoDogrulaSoapOut">
+    <wsdl:part name="parameters" element="tns:TCKimlikNoDogrulaResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="KPSPublicSoap">
+    <wsdl:operation name="TCKimlikNoDogrula">
+      <wsdl:input message="tns:TCKimlikNoDogrulaSoapIn"/>
+      <wsdl:output message="tns:TCKimlikNoDogrulaSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="KPSPublicSoap" type="tns:KPSPublicSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="TCKimlikNoDogrula">
+      <soap:operation soapAction="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="KPSPublicSoap12" type="tns:KPSPublicSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="TCKimlikNoDogrula">
+      <soap12:operation soapAction="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="KPSPublic">
+    <wsdl:port name="KPSPublicSoap" binding="tns:KPSPublicSoap">
+      <soap:address location="https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="KPSPublicSoap12" binding="tns:KPSPublicSoap12">
+      <soap12:address location="https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx</con:endpoint></con:endpoints><con:operation id="c2e08d52-ccdd-410e-9ca0-cad1e8eaf060" isOneWay="false" action="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula" name="TCKimlikNoDogrula" bindingOperationName="TCKimlikNoDogrula" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c415f6ee-8eb8-4aa0-a3bc-fb95a04ffcd9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://tckimlik.nvi.gov.tr/WS">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:TCKimlikNoDogrula>\r
+         <ws:TCKimlikNo>?</ws:TCKimlikNo>\r
+         <!--Optional:-->\r
+         <ws:Ad>?</ws:Ad>\r
+         <!--Optional:-->\r
+         <ws:Soyad>?</ws:Soyad>\r
+         <ws:DogumYili>?</ws:DogumYili>\r
+      </ws:TCKimlikNoDogrula>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tckimlik.nvi.gov.tr/WS/KPSPublicSoap/TCKimlikNoDogrulaRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

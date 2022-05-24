@@ -1,0 +1,40 @@
+How to Create SOAP Web Service in Visual Studio - Kindson The Tech Pro
+What about Web Service
+Step1:CreatingaWeb Service Solution
+Step2:CreatingaWeb Service
+Step3:Testing the Web Service
+Step4:Calling the Web Service from a website
+New WCF Service eklendi.
+Interface-Class var.
+WebService Solutiın WCF Service.
+Create WebService.
+Projeye tıkla sağ new item WebService(ASMX)
+Convert Centigriate to Fahreneit yapacak.Convert.cs ve Convert.asmx
+WEBmETHOD VAR.
+Otomatik HelloWorld metodu geldi.
+SOAP WebService XMLdir.
+Invoke çağır.
+Celciusu Fahenheite ve tam tersi.
+WebMethodu ekledik.
+Himzet içerisinde görebilirsin.
+Değer girecek alan gelir ve deneybilirsin.
+Sonucu ekranına getirir.
+ASP.NET Empty Application 
+Add WebForms
+Table 3*2 insert edildi.
+Daha önce oluşturduğumuz referansa ekleyeceğiz servisi
+Add Service Reference
+Advanced
+http://localhost:59570/Convert.asmx oraya gidin servisleri geldi.
+web reference name localhost ekledik.
+Metodu buton tıklaması içine ekleyelim.
+Sıcaklığı celcius ve fahrenheite çevirdik.
+SOAP Webservice oluşturup kullandık.
+Çalıştırdığımızda çevirme işlemini girilen değere göre yaptı.
+
+SOAPUI Kullanımı: https://www.youtube.com/watch?v=-B4VkHjrp6c (How to use SOAPUI to test a WSDL file)
+İleride (https://www.youtube.com/watch?v=U5HASVGS3js&t=1228s - Web Services Testing using SOAP UI)
+
+WCF Service Visual Studio Eklemek Kurulum : https://www.youtube.com/watch?v=wxJ2gUrhptc
+
+Tools: SOAP UI
